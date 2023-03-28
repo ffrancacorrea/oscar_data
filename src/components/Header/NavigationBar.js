@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const Wrapper = styled.div`
-  position: absolute; 
+  position: absolute;
   display: flex;
   background-color: ${({ theme }) => theme.color};
   justify-content: space-around;
@@ -35,8 +35,7 @@ const NavigationBar = () => {
           <NavigationItem href="#About">Sobre mim</NavigationItem>
           <NavigationItem href="#Projects">Projetos</NavigationItem>
         </NavigationItems>
-        <div
-        ></div>
+        <div></div>
       </NavigationLinks>
     </Wrapper>
   );
