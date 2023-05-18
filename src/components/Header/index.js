@@ -62,7 +62,7 @@ const Header = () => {
       <Container>
         <h1>Oscar Correa Jr</h1>
         <h3>
-          Seja bem vindo ao meu <a href="#Projects">portfolio</a>
+          Seja bem vindo ao meu <a href="#Projects">portfólio</a>
         </h3>
       </Container>
       <div class="custom-shape-divider-bottom-1679905737">

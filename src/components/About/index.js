@@ -1,6 +1,10 @@
 import React from 'react'
 import styled from '@emotion/styled'
+
 import profilePic from '../../assets/profile-pic.jpg'
+import excelLogo from '../../assets/excel-logo.png'
+import powerbiLogo from '../../assets/powerbi-logo.png'
+import sqlLogo from '../../assets/sql-logo.png'
 
 const Wrapper = styled.div`
   display: flex;
@@ -42,11 +46,17 @@ const Content = styled.div`
   margin-bottom: 100px;
   color: ${({ theme }) => theme.gray};
   p {
-    margin: 100px;
     text-align: justify;
     font-size: large;
   }
 `
+const Info = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 100px;
+`
+
 const Photo = styled.div`
   display: flex;
   flex: 1;
@@ -61,24 +71,14 @@ const Photo = styled.div`
     clip-path: ellipse(59% 45% at 27% 54%);
   } */
 `
-const Line = styled.div`
-  //border-radius: 95% 45% 45% 95%;
-  margin-top: 30px;
-  &.first {
-    position: absolute;
-    height: 150px;
-    border-left: ${({ theme }) => `4px solid ${theme.darkGreen}`};
-    margin-top: -50px;
-    margin-left: -250px;
-    transform: rotate(45deg);
-  }
-  &.second {
-    position: absolute;
-    height: 220px;
-    border-left: ${({ theme }) => `4px solid ${theme.lightGreen}`};
-    margin-top: -70px;
-    margin-left: -240px;
-    transform: rotate(45deg);
+
+const Logos = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  img {
+    //width: 100px;
+    height: 100px;
   }
 `
 
@@ -92,17 +92,24 @@ const About = () => {
           <Line className="second"></Line> */}
           <img src={profilePic} alt="" />
         </Photo>
-        <p>
-          Natural de Santos, em São Paulo, tenho 58 anos de idade e gosto de praticar crossfit e de assistir a filmes no
-          cinema e em streamings. Bacharel em Administração, possuo bons conhecimentos na língua inglesa e prefiro ver
-          sempre o lado positivo das coisas. Sempre atuei na área comercial e, por mais tempo na indústria farmacêutica
-          onde consegui desenvolver habilidades de negociação e liderança chegando a gerenciar equipes. Aprendi a me
-          comunicar muito bem falando em público e palestrando para várias pessoas, além de gostar de aprender
-          continuamente acho importante compartilhar os conhecimentos e opiniões. Hoje, como Analista de Dados, tenho o
-          conhecimento para contribuir com organizações na descoberta de insights que gerem melhores resultados de
-          negócios, que vejo como sendo o foco de toda empresa. Meus conhecimentos abrangem técnicas de estatística
-          descritiva, probabilidade e inferência estatística, utilizando ferramentas como Excel, SQL e Power BI.
-        </p>
+        <Info>
+          <p>
+            Natural de Santos, em São Paulo, gosto de praticar crossfit e de assistir a filmes no cinema e em
+            streamings. Bacharel em Administração, possuo bons conhecimentos na língua inglesa e prefiro ver sempre o
+            lado positivo das coisas. Sempre atuei na área comercial e, por mais tempo na indústria farmacêutica onde
+            consegui desenvolver habilidades de negociação e liderança chegando a gerenciar equipes. Aprendi a me
+            comunicar muito bem falando em público e palestrando para várias pessoas, além de gostar de aprender
+            continuamente acho importante compartilhar os conhecimentos e opiniões. Hoje, como Analista de Dados, tenho
+            o conhecimento para contribuir com organizações na descoberta de insights que gerem melhores resultados de
+            negócios e acredito que um bom analista deve sempre observar as várias possibilidades dos dados.
+          </p>
+
+          <Logos>
+            <img src={excelLogo} alt="" />
+            <img src={powerbiLogo} alt="" />
+            <img src={sqlLogo} alt="" />
+          </Logos>
+        </Info>
       </Content>
     </Wrapper>
   )
