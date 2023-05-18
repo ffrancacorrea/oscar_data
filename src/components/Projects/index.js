@@ -129,7 +129,9 @@ const Projects = () => {
               href="https://drive.google.com/drive/folders/1hUXDcJ0OjCURDYOhx2serpEMclNlI3uX?usp=share_link"
               target="_blank"
               rel="noreferrer"
-            ></a>
+            >
+              {' '}
+            </a>
           </Project>
         </Grid>
         <Grid style={{ marginLeft: '-10%' }}>
