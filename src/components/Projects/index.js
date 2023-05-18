@@ -2,6 +2,8 @@ import React from 'react'
 import styled from '@emotion/styled'
 
 import banner from '../../assets/banner.jpg'
+import project_fintech from '../../assets/project_fintech.jpeg'
+import project_enade from '../../assets/project_enade.jpeg'
 
 const Wrapper = styled.div`
   position: relative;
@@ -13,7 +15,7 @@ const Wrapper = styled.div`
   background-image: ${({ theme }) =>
     `linear-gradient(to left bottom, ${theme.gradientLightGreen}, ${theme.gradientDarkGreen} 50%), url(${banner})`};
   width: 100%;
-  height: 100vh;
+  height: 100%;
 
   .custom-shape-divider-top-1680002009 {
     position: absolute;
@@ -40,7 +42,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  height: 100%;
+  height: 100vh;
 `
 const Title = styled.h1`
   color: ${({ theme }) => theme.color};
@@ -57,10 +59,36 @@ const Grid = styled.div`
 `
 const Project = styled.div`
   display: flex;
-  background-color: ${({ theme }) => theme.color};
-  width: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: ${({ image, inProgress }) =>
+    inProgress
+      ? `linear-gradient(to bottom,  rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${image})`
+      : `url(${image})`};
+  filter: ${({ inProgress }) => inProgress && 'grayscale(100%)'};
+  width: 40%;
   height: 300px;
   margin: 20px;
+  border: 3px solid white;
+  border-radius: 8px;
+  justify-content: center;
+  span {
+    font-size: 200%;
+    position: absolute;
+    z-index: 2;
+    color: ${({ theme }) => theme.color};
+    line-height: 300px;
+  }
+  a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+  }
+  :hover {
+    transform: ${({ inProgress }) => !inProgress && 'scale(1.05)'};
+    transition: 0.7s;
+  }
 `
 const Projects = () => {
   return (
@@ -75,15 +103,15 @@ const Projects = () => {
       </div>
       <Container>
         <Title>Projetos</Title>
-        <Grid>
-          <Project></Project>
-          <Project></Project>
-          <Project></Project>
+        <Grid style={{ marginLeft: '10%' }}>
+          <Project image={project_fintech}>
+            <a href="https://drive.google.com/drive/folders/1hUXDcJ0OjCURDYOhx2serpEMclNlI3uX?usp=share_link"></a>
+          </Project>
         </Grid>
-        <Grid>
-          <Project></Project>
-          <Project></Project>
-          <Project></Project>
+        <Grid style={{ marginLeft: '-10%' }}>
+          <Project inProgress image={project_enade}>
+            <span>In Progress...</span>
+          </Project>
         </Grid>
       </Container>
     </Wrapper>
