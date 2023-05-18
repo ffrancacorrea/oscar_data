@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   background-color: ${({ theme }) => theme.backgroundColor};
   width: 100%;
-  height: 90vh;
+  height: 100vh;
 
   .custom-shape-divider-top-1680001815 {
     position: absolute;
@@ -43,7 +43,6 @@ const Title = styled.h1`
 const Content = styled.div`
   display: flex;
   justify-content: space-around;
-  margin-bottom: 100px;
   color: ${({ theme }) => theme.gray};
   p {
     text-align: justify;
