@@ -57,10 +57,14 @@ const Footer = () => {
       <Title>Contato</Title>
       <Logos>
         <Logo image={gmailLogo}>
-          <a href="mailto:oscarjr.data@gmail.com" target="_blank" rel="noreferrer"></a>
+          <a href="mailto:oscarjr.data@gmail.com" target="_blank" rel="noreferrer">
+            {' '}
+          </a>
         </Logo>
         <Logo image={linkedinLogo}>
-          <a href="https://linkedin.com/in/oscarcorreajr/" target="_blank" rel="noreferrer"></a>
+          <a href="https://linkedin.com/in/oscarcorreajr/" target="_blank" rel="noreferrer">
+            {' '}
+          </a>
         </Logo>
       </Logos>
     </Wrapper>
