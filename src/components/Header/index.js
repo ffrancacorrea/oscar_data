@@ -63,7 +63,7 @@ const Header = () => {
     <Wrapper id="Header">
       <NavigationBar></NavigationBar>
       <Container>
-        <h1>Oscar Correa Jr</h1>
+        <h1>Oscar Corrêa Jr</h1>
         <h3>
           Seja bem vindo ao meu <a href="#Projects">portfólio</a>
         </h3>
