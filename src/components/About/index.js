@@ -64,6 +64,7 @@ const Photo = styled.div`
   margin: 100px;
   img {
     width: 300px;
+    border: ${({ theme }) => `3px solid ${theme.darkGreen}`};
     border-radius: 5px;
   }
 `
