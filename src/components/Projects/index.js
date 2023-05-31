@@ -8,6 +8,7 @@ import project_enade from '../../assets/project_enade.jpeg'
 const Wrapper = styled.div`
   position: relative;
   display: flex;
+  flex: 1;
   flex-direction: column;
   color: ${({ theme }) => theme.color};
   background-size: cover;
@@ -15,7 +16,7 @@ const Wrapper = styled.div`
   background-image: ${({ theme }) =>
     `linear-gradient(to left bottom, ${theme.gradientLightGreen}, ${theme.gradientDarkGreen} 50%), url(${banner})`};
   width: 100%;
-  height: 100%;
+  height: 100vh;
 
   .custom-shape-divider-top-1680002009 {
     position: absolute;
@@ -62,7 +63,7 @@ const Container = styled.div`
   justify-content: center;
   text-align: center;
   height: 100vh;
-  margin-bottom: 10%;
+  margin: 100px 0px 200px 0px;
 `
 const Title = styled.h1`
   color: ${({ theme }) => theme.color};

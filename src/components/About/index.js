@@ -8,6 +8,7 @@ import sqlLogo from '../../assets/sql-logo.png'
 
 const Wrapper = styled.div`
   display: flex;
+  flex: 1;
   flex-direction: column;
   background-color: ${({ theme }) => theme.backgroundColor};
   width: 100%;
@@ -64,11 +65,7 @@ const Photo = styled.div`
   img {
     width: 300px;
     border-radius: 5px;
-    //clip-path: circle(50% at 50% 50%);
   }
-  /* img {
-    clip-path: ellipse(59% 45% at 27% 54%);
-  } */
 `
 
 const Logos = styled.div`
