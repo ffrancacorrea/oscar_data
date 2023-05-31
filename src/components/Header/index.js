@@ -51,7 +51,10 @@ const Container = styled.div`
   font-style: italic;
   font-size: 30px;
   h1 {
+    font-style: normal;
     z-index: 1;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 800;
   }
 `
 

@@ -76,6 +76,11 @@ const Logos = styled.div`
     //width: 100px;
     height: 100px;
   }
+  img:hover {
+    filter: none;
+    transform: scale(1.3) rotate(5deg);
+    transition: 0.5s;
+  }
 `
 
 const About = () => {

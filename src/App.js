@@ -14,6 +14,8 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
 `
 function App() {
   return (
