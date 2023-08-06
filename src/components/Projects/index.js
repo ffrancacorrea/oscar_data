@@ -4,6 +4,7 @@ import styled from '@emotion/styled'
 import banner from '../../assets/banner.jpg'
 import project_fintech from '../../assets/project_fintech.jpeg'
 import project_enade from '../../assets/project_enade.jpeg'
+import project_vendas from '../../assets/project_vendas.PNG'
 
 const Wrapper = styled.div`
   position: relative;
@@ -59,6 +60,7 @@ const Wrapper = styled.div`
 `
 const Container = styled.div`
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   text-align: center;
@@ -110,6 +112,10 @@ const Project = styled.div`
     transform: ${({ inProgress }) => !inProgress && 'scale(1.05)'};
     transition: 0.7s;
   }
+
+  @media (max-width: 1200px) {
+    height: 150px;
+  }
 `
 const Projects = () => {
   return (
@@ -130,14 +136,25 @@ const Projects = () => {
               href="https://drive.google.com/drive/folders/1hUXDcJ0OjCURDYOhx2serpEMclNlI3uX?usp=share_link"
               target="_blank"
               rel="noreferrer"
-            >
-              {' '}
-            </a>
+            ></a>
           </Project>
         </Grid>
         <Grid style={{ marginLeft: '-10%' }}>
-          <Project inProgress image={project_enade}>
-            <span>Em andamento...</span>
+          <Project image={project_enade}>
+            <a
+              href="https://app.powerbi.com/view?r=eyJrIjoiMmU0NGYzNGItNTg1My00N2MyLTk2N2EtZjEzZjg5YjJmNmIyIiwidCI6IjQ3OGJjZDZkLWU2MDYtNGQ4ZS1iNWRmLTkzNzA1YjJjMTdhNiJ9"
+              target="_blank"
+              rel="noreferrer"
+            ></a>
+          </Project>
+        </Grid>
+        <Grid style={{ marginLeft: '10%' }}>
+          <Project image={project_vendas}>
+            <a
+              href="https://app.powerbi.com/view?r=eyJrIjoiOWNmNWY2MjItMWM3OS00MjVhLWI1YWEtOGNhODczY2VlZjM0IiwidCI6IjQ3OGJjZDZkLWU2MDYtNGQ4ZS1iNWRmLTkzNzA1YjJjMTdhNiJ9"
+              target="_blank"
+              rel="noreferrer"
+            ></a>
           </Project>
         </Grid>
       </Container>

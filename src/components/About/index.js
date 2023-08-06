@@ -49,6 +49,9 @@ const Content = styled.div`
     text-align: justify;
     font-size: large;
   }
+  @media (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
 `
 const Info = styled.div`
   display: flex;
@@ -58,14 +61,15 @@ const Info = styled.div`
 `
 
 const Photo = styled.div`
-  display: flex;
-  flex: 1;
-  justify-content: center;
   margin: 100px;
   img {
     width: 300px;
     border: ${({ theme }) => `3px solid ${theme.darkGreen}`};
     border-radius: 5px;
+  }
+  @media (max-width: 900px) {
+    margin: 100px 0 0 0;
+    flex-wrap: wrap;
   }
 `
 
@@ -74,7 +78,6 @@ const Logos = styled.div`
   justify-content: space-around;
   margin-top: 50px;
   img {
-    //width: 100px;
     height: 100px;
   }
   img:hover {
@@ -100,10 +103,11 @@ const About = () => {
             streamings. Bacharel em Administração, possuo bons conhecimentos na língua inglesa e prefiro ver sempre o
             lado positivo das coisas. Sempre atuei na área comercial e, por mais tempo na indústria farmacêutica onde
             consegui desenvolver habilidades de negociação e liderança chegando a gerenciar equipes. Aprendi a me
-            comunicar muito bem falando em público e palestrando para várias pessoas, além de gostar de aprender
-            continuamente acho importante compartilhar os conhecimentos e opiniões. Hoje, como Analista de Dados, tenho
-            o conhecimento para contribuir com organizações na descoberta de insights que gerem melhores resultados de
-            negócios e acredito que um bom analista deve sempre observar as várias possibilidades dos dados.
+            comunicar muito bem falando em público e palestrando para várias pessoas, além disso, gosto de aprender
+            continuamente e acho importante compartilhar os conhecimentos e opiniões. Hoje, como Analista de Dados,
+            tenho o conhecimento para contribuir com organizações na descoberta de insights que gerem melhores
+            resultados de negócios e acredito que um bom analista deve sempre observar as várias possibilidades dos
+            dados utilizando técnicas de matemática e estatística.
           </p>
 
           <Logos>
