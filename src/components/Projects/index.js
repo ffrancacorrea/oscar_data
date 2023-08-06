@@ -136,7 +136,9 @@ const Projects = () => {
               href="https://drive.google.com/drive/folders/1hUXDcJ0OjCURDYOhx2serpEMclNlI3uX?usp=share_link"
               target="_blank"
               rel="noreferrer"
-            ></a>
+            >
+              {' '}
+            </a>
           </Project>
         </Grid>
         <Grid style={{ marginLeft: '-10%' }}>
@@ -145,7 +147,9 @@ const Projects = () => {
               href="https://app.powerbi.com/view?r=eyJrIjoiMmU0NGYzNGItNTg1My00N2MyLTk2N2EtZjEzZjg5YjJmNmIyIiwidCI6IjQ3OGJjZDZkLWU2MDYtNGQ4ZS1iNWRmLTkzNzA1YjJjMTdhNiJ9"
               target="_blank"
               rel="noreferrer"
-            ></a>
+            >
+              {' '}
+            </a>
           </Project>
         </Grid>
         <Grid style={{ marginLeft: '10%' }}>
@@ -154,7 +158,9 @@ const Projects = () => {
               href="https://app.powerbi.com/view?r=eyJrIjoiOWNmNWY2MjItMWM3OS00MjVhLWI1YWEtOGNhODczY2VlZjM0IiwidCI6IjQ3OGJjZDZkLWU2MDYtNGQ4ZS1iNWRmLTkzNzA1YjJjMTdhNiJ9"
               target="_blank"
               rel="noreferrer"
-            ></a>
+            >
+              {' '}
+            </a>
           </Project>
         </Grid>
       </Container>
