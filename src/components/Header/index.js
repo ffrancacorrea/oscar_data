@@ -50,11 +50,18 @@ const Container = styled.div`
   height: 100%;
   font-style: italic;
   font-size: 30px;
+  font-family: 'Noto Sans JP', sans-serif;
   h1 {
     font-style: normal;
     z-index: 1;
-    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 800;
+    margin-bottom: 0;
+  }
+  p {
+    font-style: normal;
+    z-index: 1;
+    margin-top: 0;
+    font-size: 90%;
   }
 `
 
@@ -64,6 +71,7 @@ const Header = () => {
       <NavigationBar></NavigationBar>
       <Container>
         <h1>Oscar Corrêa Jr</h1>
+        <p>Consultor de BI</p>
         <h3>
           Seja bem vindo ao meu <a href="#Projects">portfólio</a>
         </h3>

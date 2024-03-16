@@ -133,7 +133,7 @@ const Projects = () => {
         <Grid style={{ marginLeft: '10%' }}>
           <Project image={project_fintech}>
             <a
-              href="https://drive.google.com/drive/folders/1hUXDcJ0OjCURDYOhx2serpEMclNlI3uX?usp=share_link"
+              href="https://medium.com/@oscarjr.data/portf%C3%B3lio-1-projeto-inadimpl%C3%AAncia-na-fintech-98a602e2737"
               target="_blank"
               rel="noreferrer"
             >
@@ -155,7 +155,7 @@ const Projects = () => {
         <Grid style={{ marginLeft: '10%' }}>
           <Project image={project_vendas}>
             <a
-              href="https://app.powerbi.com/view?r=eyJrIjoiOWNmNWY2MjItMWM3OS00MjVhLWI1YWEtOGNhODczY2VlZjM0IiwidCI6IjQ3OGJjZDZkLWU2MDYtNGQ4ZS1iNWRmLTkzNzA1YjJjMTdhNiJ9"
+              href="https://app.powerbi.com/view?r=eyJrIjoiMTUwZTU4MGItNjNmMS00YjViLTkzMmItMjJhYzJhOWM2Yzk2IiwidCI6IjQ3OGJjZDZkLWU2MDYtNGQ4ZS1iNWRmLTkzNzA1YjJjMTdhNiJ9"
               target="_blank"
               rel="noreferrer"
             >

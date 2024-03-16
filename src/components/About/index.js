@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 
+import banner from '../../assets/banner.jpg'
 import profilePic from '../../assets/profile-pic.jpg'
 import excelLogo from '../../assets/excel-logo.png'
 import powerbiLogo from '../../assets/powerbi-logo.png'
@@ -62,10 +63,17 @@ const Info = styled.div`
 
 const Photo = styled.div`
   margin: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: ${({ theme }) =>
+    `linear-gradient(to left bottom, ${theme.gradientLightGreen}, ${theme.gradientDarkGreen} 50%), url(${banner})`};
+
+  border: ${({ theme }) => `0px solid ${theme.darkGreen}`};
+  border-radius: 20% 80% 33% 67% / 72% 60% 40% 28%;
   img {
     width: 300px;
-    border: ${({ theme }) => `3px solid ${theme.darkGreen}`};
-    border-radius: 5px;
+    border: ${({ theme }) => `0px solid ${theme.darkGreen}`};
+    border-radius: 73% 27% 65% 35% / 30% 39% 61% 70%;
   }
   @media (max-width: 900px) {
     margin: 100px 0 0 0;
@@ -82,7 +90,7 @@ const Logos = styled.div`
   }
   img:hover {
     filter: none;
-    transform: scale(1.3) rotate(5deg);
+    transform: scale(1.3);
     transition: 0.5s;
   }
 `
@@ -99,17 +107,18 @@ const About = () => {
         </Photo>
         <Info>
           <p>
-            Natural de Santos, em São Paulo, gosto de praticar crossfit e de assistir a filmes no cinema e em
-            streamings. Bacharel em Administração, possuo bons conhecimentos na língua inglesa e prefiro ver sempre o
-            lado positivo das coisas. Sempre atuei na área comercial e, por mais tempo na indústria farmacêutica onde
-            consegui desenvolver habilidades de negociação e liderança chegando a gerenciar equipes. Aprendi a me
-            comunicar muito bem falando em público e palestrando para várias pessoas, além disso, gosto de aprender
-            continuamente e acho importante compartilhar os conhecimentos e opiniões. Hoje, como Analista de Dados,
-            tenho o conhecimento para contribuir com organizações na descoberta de insights que gerem melhores
-            resultados de negócios e acredito que um bom analista deve sempre observar as várias possibilidades dos
-            dados utilizando técnicas de matemática e estatística.
+            Natural de Santos/SP, resido em Marabá/PA desde 2003 tendo passado 10 anos em Belém/PA onde atuei como
+            gerente de equipe de propagandistas de laboratório farmacêutico. Bacharel em Administração pela UNIMES em
+            Santos, sou formado em Análise de Dados pela escola Preditiva Analytics desde março de 2022. Possuo também a
+            formação em Power BI pela Simplifica Treinamentos, conhecendo amplamente sua capacidade de entrega. Sempre
+            atuei na área comercial e, por mais tempo na indústria farmacêutica onde consegui desenvolver soft skills
+            extremamente úteis para se analisar dados com uma visão mais crítica e investigativa. A formação na
+            Preditiva me tornou hábil nas análises com a utilização de técnicas de estatistica que levam a insights mais
+            acertivos proporionando melhores tomadas de decisão para os negócios. Utilizo ferramentas como Excel, SQL,
+            Power BI e outras para desenvolver o trabalho com o melhor desempenho possível. Como consultor ofereço toda
+            a atenção ao cliente de forma que nunca se sinta desamparado. As etapas dos projetos combinados são tratadas
+            com transparência não ocorrendo dúvidas para o meu cliente.
           </p>
-
           <Logos>
             <img src={excelLogo} alt="" />
             <img src={powerbiLogo} alt="" />

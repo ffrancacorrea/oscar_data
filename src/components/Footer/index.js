@@ -45,7 +45,7 @@ const Logo = styled.div`
     text-decoration: none;
   }
   :hover {
-    transform: rotate(20deg) scale(1.2);
+    transform: scale(1.2);
     transition: 0.5s;
     box-shadow: 0.5 1rem 1rem rgba(0, 0, 0, 0.3);
   }
