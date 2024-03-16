@@ -69,7 +69,7 @@ const Photo = styled.div`
     `linear-gradient(to left bottom, ${theme.gradientLightGreen}, ${theme.gradientDarkGreen} 50%), url(${banner})`};
 
   border: ${({ theme }) => `0px solid ${theme.darkGreen}`};
-  border-radius: 20% 80% 33% 67% / 72% 60% 40% 28%;
+  border-radius: 41% 59% 42% 58% / 68% 60% 40% 32%;
   img {
     width: 300px;
     border: ${({ theme }) => `0px solid ${theme.darkGreen}`};
