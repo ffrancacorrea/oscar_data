@@ -50,17 +50,20 @@ const Logo = styled.div`
     box-shadow: 0.5 1rem 1rem rgba(0, 0, 0, 0.3);
   }
 `
-//  <a href="http://www.freepik.com">Designed by starline / Freepik</a>
 const Footer = () => {
   return (
     <Wrapper id="Contact">
       <Title>Contato</Title>
       <Logos>
         <Logo image={gmailLogo}>
-          <a href="mailto:oscarjr.data@gmail.com" target="_blank" rel="noreferrer" />
+          <a href="mailto:oscarjr.data@gmail.com" target="_blank" rel="noreferrer">
+            {' '}
+          </a>
         </Logo>
         <Logo image={linkedinLogo}>
-          <a href="https://linkedin.com/in/oscarcorreajr/" target="_blank" rel="noreferrer" />
+          <a href="https://linkedin.com/in/oscarcorreajr/" target="_blank" rel="noreferrer">
+            {' '}
+          </a>
         </Logo>
       </Logos>
     </Wrapper>
