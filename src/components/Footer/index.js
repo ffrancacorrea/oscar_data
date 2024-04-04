@@ -53,18 +53,14 @@ const Logo = styled.div`
 //  <a href="http://www.freepik.com">Designed by starline / Freepik</a>
 const Footer = () => {
   return (
-    <Wrapper>
+    <Wrapper id="Contact">
       <Title>Contato</Title>
       <Logos>
         <Logo image={gmailLogo}>
-          <a href="mailto:oscarjr.data@gmail.com" target="_blank" rel="noreferrer">
-            {' '}
-          </a>
+          <a href="mailto:oscarjr.data@gmail.com" target="_blank" rel="noreferrer" />
         </Logo>
         <Logo image={linkedinLogo}>
-          <a href="https://linkedin.com/in/oscarcorreajr/" target="_blank" rel="noreferrer">
-            {' '}
-          </a>
+          <a href="https://linkedin.com/in/oscarcorreajr/" target="_blank" rel="noreferrer" />
         </Logo>
       </Logos>
     </Wrapper>

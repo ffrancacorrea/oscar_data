@@ -3,8 +3,11 @@ import styled from '@emotion/styled'
 
 import banner from '../../assets/banner.jpg'
 import project_fintech from '../../assets/project_fintech.jpeg'
-import project_enade from '../../assets/project_enade.jpeg'
-import project_vendas from '../../assets/project_vendas.PNG'
+import project_clinica_maraba from '../../assets/project_clinica_maraba.mp4'
+import project_perfil from '../../assets/project_perfil.mp4'
+import project_produtos from '../../assets/project_produtos.jpeg'
+import project_vendas from '../../assets/project_vendas.jpeg'
+import project_sac from '../../assets/project_sac.jpeg'
 
 const Wrapper = styled.div`
   position: relative;
@@ -78,29 +81,30 @@ const Grid = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-around;
+  justify-content: center;
 `
 const Project = styled.div`
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: ${({ image, inProgress }) =>
-    inProgress
-      ? `linear-gradient(to bottom,  rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${image})`
-      : `url(${image})`};
-  filter: ${({ inProgress }) => inProgress && 'grayscale(100%)'};
   width: 40%;
   height: 300px;
   margin: 20px;
   border: 3px solid white;
   border-radius: 8px;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
   span {
     font-size: 200%;
     position: absolute;
     z-index: 2;
     color: ${({ theme }) => theme.color};
     line-height: 300px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
   }
   a {
     display: block;
@@ -109,14 +113,19 @@ const Project = styled.div`
     text-decoration: none;
   }
   :hover {
-    transform: ${({ inProgress }) => !inProgress && 'scale(1.05)'};
+    transform: scale(1.05);
     transition: 0.7s;
   }
-
-  @media (max-width: 1200px) {
-    height: 150px;
-  }
 `
+
+const ProjectMedia = ({ media }) => {
+  if (media.endsWith('.mp4')) {
+    return <video src={media} autoPlay muted loop style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+  } else {
+    return <img src={media} alt="Project" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+  }
+}
+
 const Projects = () => {
   return (
     <Wrapper id="Projects">
@@ -130,36 +139,63 @@ const Projects = () => {
       </div>
       <Container>
         <Title>Projetos</Title>
-        <Grid style={{ marginLeft: '10%' }}>
-          <Project image={project_fintech}>
+        <Grid>
+          <Project>
             <a
               href="https://medium.com/@oscarjr.data/portf%C3%B3lio-1-projeto-inadimpl%C3%AAncia-na-fintech-98a602e2737"
               target="_blank"
               rel="noreferrer"
             >
-              {' '}
+              <ProjectMedia media={project_fintech} />
+            </a>
+          </Project>
+          <Project>
+            <a
+              href="https://app.powerbi.com/view?r=eyJrIjoiODVlNjdlNjctNjg3Ni00YzQxLTk1OWQtMTZkNWY3ZTQ0MTk4IiwidCI6IjNmNWY0OWIyLTIyZjMtNDU4NS1iODE1LTQwOWJmYjk3MjJhNiJ9"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ProjectMedia media={project_clinica_maraba} />
             </a>
           </Project>
         </Grid>
-        <Grid style={{ marginLeft: '-10%' }}>
-          <Project image={project_enade}>
+        <Grid>
+          <Project>
+            <a
+              href="https://app.powerbi.com/view?r=eyJrIjoiZDZkMTc4YjAtZTlhYi00NDUzLTk4MWMtYjhhMjA2NTQ2Mzk2IiwidCI6IjNmNWY0OWIyLTIyZjMtNDU4NS1iODE1LTQwOWJmYjk3MjJhNiJ9"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ProjectMedia media={project_perfil} />
+            </a>
+          </Project>
+          <Project>
+            <a
+              href="https://app.powerbi.com/view?r=eyJrIjoiM2MyODA0OGItOGRlYy00MjZiLTgzM2YtMWEzZmE4YjAyNTcwIiwidCI6IjNmNWY0OWIyLTIyZjMtNDU4NS1iODE1LTQwOWJmYjk3MjJhNiJ9"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ProjectMedia media={project_produtos} />
+            </a>
+          </Project>
+        </Grid>
+        <Grid>
+          <Project>
+            <a
+              href="https://app.powerbi.com/view?r=eyJrIjoiNTE3ZDJkNjctZjI1YS00Y2Q0LTg0OTYtNGI4NWNmNWJhYjcxIiwidCI6IjNmNWY0OWIyLTIyZjMtNDU4NS1iODE1LTQwOWJmYjk3MjJhNiJ9"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ProjectMedia media={project_vendas} />
+            </a>
+          </Project>
+          <Project>
             <a
               href="https://app.powerbi.com/view?r=eyJrIjoiMmU0NGYzNGItNTg1My00N2MyLTk2N2EtZjEzZjg5YjJmNmIyIiwidCI6IjQ3OGJjZDZkLWU2MDYtNGQ4ZS1iNWRmLTkzNzA1YjJjMTdhNiJ9"
               target="_blank"
               rel="noreferrer"
             >
-              {' '}
-            </a>
-          </Project>
-        </Grid>
-        <Grid style={{ marginLeft: '10%' }}>
-          <Project image={project_vendas}>
-            <a
-              href="https://app.powerbi.com/view?r=eyJrIjoiMTUwZTU4MGItNjNmMS00YjViLTkzMmItMjJhYzJhOWM2Yzk2IiwidCI6IjQ3OGJjZDZkLWU2MDYtNGQ4ZS1iNWRmLTkzNzA1YjJjMTdhNiJ9"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {' '}
+              <ProjectMedia media={project_sac} />
             </a>
           </Project>
         </Grid>

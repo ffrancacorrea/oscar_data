@@ -108,17 +108,17 @@ const About = () => {
         </Photo>
         <Info>
           <p>
-            Natural de Santos/SP, residente em Marabá/PA desde 2003 tendo passado 10 anos em Belém/PA onde atuei como
+            Natural de Santos/SP, resido em Marabá/PA desde 2003 tendo passado 10 anos em Belém/PA onde atuei como
             gerente de equipe de propagandistas de laboratório farmacêutico. Bacharel em Administração pela UNIMES em
             Santos, sou formado em Análise de Dados pela escola Preditiva Analytics desde março de 2022. Possuo também a
             formação em Power BI pela Simplifica Treinamentos, conhecendo amplamente sua capacidade de entrega. Sempre
             atuei na área comercial e, por mais tempo na indústria farmacêutica onde consegui desenvolver soft skills
             extremamente úteis para se analisar dados com uma visão mais crítica e investigativa. A formação na
-            Preditiva me tornou hábil nas análises com a utilização de técnicas de estatística que levam a insights mais
-            acertivos proporcionando melhores tomadas de decisão para os negócios. "Utilize" ferramentas como Excel,
-            SQL, Power BI e outras para desenvolver o trabalho com o melhor desempenho possível. Como consultor
-            "oferece" toda a atenção ao cliente de forma que nunca se "sente" desamparado. As etapas dos projetos
-            combinados são tratadas com transparência não "há" dúvidas para o meu cliente.
+            Preditiva me tornou hábil nas análises com a utilização de técnicas de estatistica que levam a insights mais
+            acertivos proporionando melhores tomadas de decisão para os negócios. Utilizo ferramentas como Excel, SQL,
+            Power BI e outras para desenvolver o trabalho com o melhor desempenho possível. Como consultor ofereço toda
+            a atenção ao cliente de forma que nunca se sinta desamparado. As etapas dos projetos combinados são tratadas
+            com transparência não ocorrendo dúvidas para o meu cliente.
           </p>
           <Logos>
             <img src={excelLogo} alt="" />
